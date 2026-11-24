@@ -1,0 +1,14 @@
+DISPENSA & COMPRA — PWA offline-first (Android)
+
+Rodar grátis no celular (GitHub Pages):
+1. Crie um repositório no GitHub (ex.: dispensa-compra) e envie TODO o conteúdo desta pasta (index.html na raiz).
+2. Settings > Pages > Deploy from a branch > main / (root).
+3. Abra https://SEU-USUARIO.github.io/dispensa-compra/ no Chrome do Android, uma vez COM internet.
+4. Menu do Chrome ⋮ > "Instalar app". Depois disso abre e funciona sem sinal.
+
+Testar no PC: na pasta, rode `python3 -m http.server 8000` e abra http://localhost:8000
+(Service Worker exige HTTPS ou localhost.)
+
+Atualizar o app: troque os arquivos no repositório; a nova versão aparece na 2ª abertura.
+Se mudar a lista de arquivos, aumente o número em CACHE no sw.js (dc-v1 -> dc-v2).
+Backup: Ajustes > Exportar backup (JSON). Dados ficam só neste aparelho.
